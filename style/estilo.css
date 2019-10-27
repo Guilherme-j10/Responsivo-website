@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal; }
+  * body {
+    background-color: #111; }
+    * body img {
+      max-width: 100%; }
+    * body h1, * body h2, * body h3 {
+      font-size: 1.2em;
+      color: #333; }
+
+.container-topo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../img/mountain.fw.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2%; }
+  .container-topo nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5% 15%; }
+    .container-topo nav ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container-topo nav ul li {
+        width: 10%;
+        margin: 0px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .container-topo nav ul li a {
+        color: #fff;
+        text-transform: uppercase; }
+      .container-topo nav ul li img {
+        width: 50%; }
+  .container-topo .banner {
+    width: 100%;
+    margin-top: 20px;
+    padding: .5% 15%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .container-topo .banner h1 {
+      font-size: 3em;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #fff; }
+    .container-topo .banner p {
+      font-weight: 400;
+      color: #fff; }
+
+.mundo {
+  width: 100%;
+  padding: 1.5% 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .mundo header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .mundo header h1 {
+      font-size: 1.9em;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 20px; }
+    .mundo header p {
+      width: 600px;
+      font-size: 14px;
+      color: #fff;
+      text-align: center; }
+  .mundo article {
+    width: 100%;
+    margin-top: 30px;
+    padding: 1.5% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .mundo article ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .mundo article ul li {
+        width: 33%;
+        margin: 15px;
+        overflow: hidden; }
+        .mundo article ul li .image {
+          width: 100%;
+          float: left;
+          min-height: 400px;
+          padding-bottom: 10%;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          transition: all linear .2s; }
+          .mundo article ul li .image .info {
+            width: 100%;
+            text-align: center; }
+            .mundo article ul li .image .info h1 {
+              font-size: 1.9em;
+              color: #fff;
+              font-weight: 500;
+              margin-bottom: 20px; }
+            .mundo article ul li .image .info p {
+              font-size: 14px;
+              color: #fff;
+              text-align: center; }
+        .mundo article ul li:hover .image {
+          transform: scale(1.1); }
+    .mundo article .link {
+      width: 100%;
+      text-align: center;
+      margin-top: 40px; }
+      .mundo article .link a {
+        color: #fff; }
+
+.jornal {
+  width: 100%;
+  padding: 1.5% 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%; }
+  .jornal header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .jornal header h1 {
+      font-size: 1.9em;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 20px; }
+    .jornal header p {
+      width: 600px;
+      font-size: 14px;
+      color: #fff;
+      text-align: center; }
+  .jornal article {
+    width: 100%;
+    margin-top: 30px;
+    padding: 1.5% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .jornal article ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; }
+      .jornal article ul li {
+        width: 40%;
+        margin: 20px; }
+        .jornal article ul li .photo {
+          width: 100%;
+          height: 200px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
+        .jornal article ul li .infopost {
+          width: 100%;
+          text-align: center;
+          margin-top: 20px; }
+          .jornal article ul li .infopost small {
+            color: #fff;
+            margin-bottom: 10px; }
+          .jornal article ul li .infopost h1 {
+            color: #fff;
+            font-size: 1.3em; }
+          .jornal article ul li .infopost p {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #fff; }
+    .jornal article .link {
+      width: 100%;
+      text-align: center;
+      margin-top: 40px; }
+      .jornal article .link a {
+        color: #fff; }
+
+footer {
+  width: 100%;
+  padding-bottom: 2%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("../img/gran.fw.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  footer p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px; }
+    footer p a {
+      color: #fff;
+      margin: 0px 5px; }
+
+/*# sourceMappingURL=estilo.css.map */
