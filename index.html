@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>Site - Home</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -12,9 +13,9 @@
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">explore</a></li>
-                    <li><img src="img/logo.png" alt=""></li>
+                    <li><img src="img/estack.png" alt=""></li>
                     <li><a href="#">journal</a></li>
-                    <li><a href="#">search</a></li>
+                    <li><a href="#">search<i class="fas fa-search"></i></a></li>
                 </ul>
             </nav>
             <section class="banner">
@@ -89,6 +90,28 @@
             </article>
         </section>
         <footer>
+            <article>
+                <header>
+                    <h1>Contact</h1>
+                </header>
+                <form method="POST">
+                    <div class="line">
+                        <label>NAME:</label>
+                        <input type="text" name="nome" placeholder="Deixe seu nome">
+                    </div>
+                    <div class="line">
+                        <label>subject matter:</label>
+                        <input type="text" name="nome" placeholder="Assunto">
+                    </div>
+                    <div class="line">
+                        <label>message:</label>
+                        <input type="text" name="nome" placeholder="Mensagem">
+                    </div>
+                    <div class="btn">
+                        <input type="submit" name="env" value="SUBMIT">
+                    </div>
+                </form>
+            </article>
             <p>&copy 2019 THE GREAT OUTDOORS. All rights reserved | <a href="#">About</a> <a href="#">Explore</a>  <a href="#">JOURNAL</a> <a href="#">Search</a></p>
         </footer>
     </body>

@@ -46,9 +46,14 @@
         align-items: center; }
       .container-topo nav ul li a {
         color: #fff;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container-topo nav ul li a i {
+          margin-left: 10px; }
       .container-topo nav ul li img {
-        width: 50%; }
+        width: 75%; }
   .container-topo .banner {
     width: 100%;
     margin-top: 20px;
@@ -212,12 +217,72 @@ footer {
   padding-bottom: 2%;
   min-height: 90vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   background-image: url("../img/gran.fw.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  footer article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    flex-direction: column; }
+    footer article header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2.5%; }
+      footer article header h1 {
+        font-size: 1.9em;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 20px; }
+    footer article form {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      footer article form .line {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 25px; }
+        footer article form .line label, footer article form .line input {
+          width: 100%;
+          text-transform: uppercase; }
+        footer article form .line label {
+          font-weight: 600;
+          color: #fff;
+          margin-bottom: 15px; }
+        footer article form .line input {
+          padding: 12px;
+          border: none;
+          border-bottom: solid 1px #ccc;
+          background-color: transparent;
+          color: #fff; }
+      footer article form .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        footer article form .btn input {
+          width: 190px;
+          color: #333;
+          border: none;
+          font-weight: 600;
+          background-color: #fff;
+          border-radius: 2px;
+          display: block;
+          text-align: center;
+          padding: 6px;
+          margin-top: 15px;
+          cursor: pointer; }
   footer p {
     color: #fff;
     text-transform: uppercase;
@@ -225,5 +290,69 @@ footer {
     footer p a {
       color: #fff;
       margin: 0px 5px; }
+
+/*medias querys*/
+@media (max-width: 500px) {
+  .container-topo nav {
+    padding: 5% 5%; }
+    .container-topo nav ul {
+      justify-content: space-between; }
+      .container-topo nav ul li {
+        margin: 0px; }
+        .container-topo nav ul li a {
+          color: #fff;
+          font-size: .65em; }
+          .container-topo nav ul li a i {
+            display: none; }
+      .container-topo nav ul li {
+        width: 15%; }
+        .container-topo nav ul li img {
+          width: 100%; }
+  .container-topo .banner {
+    padding: .5% 5%;
+    text-align: center; }
+    .container-topo .banner h1 {
+      font-size: 1.8em; }
+
+  .mundo {
+    padding: 1.5% 5%; }
+    .mundo header p {
+      font-size: .8em;
+      width: 90%; }
+    .mundo article ul {
+      flex-direction: column; }
+      .mundo article ul li {
+        width: 80%; }
+
+  .jornal {
+    padding: 1.5% 5%;
+    margin-top: 12%; }
+    .jornal header p {
+      font-size: .8em;
+      width: 90%; }
+    .jornal article ul {
+      align-items: center;
+      flex-direction: column; }
+      .jornal article ul li {
+        width: 85%; }
+
+  footer {
+    text-align: center; }
+    footer article {
+      margin-top: 17%; }
+      footer article header {
+        margin-bottom: 50px;
+        margin-top: 30px; }
+      footer article form {
+        width: 85%; }
+        footer article form .line {
+          margin-bottom: 50px; }
+          footer article form .line label {
+            text-align: left;
+            font-weight: 400;
+            margin-bottom: 0px; }
+    footer p {
+      font-size: 9px;
+      margin-top: 100px; } }
 
 /*# sourceMappingURL=estilo.css.map */

@@ -60,11 +60,18 @@
             li a{
                 color: #fff;
                 text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i{
+                    margin-left: 10px;
+                }
             }
 
             li{
                 img{
-                    width: 50%;
+                    width: 75%;
                 }
             }
         }
@@ -296,12 +303,92 @@ footer{
     padding-bottom: 2%;
     min-height: 90vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     background-image: url("../img/gran.fw.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+    article{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        flex-direction: column;
+
+        header{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2.5%;
+            
+            h1{
+                font-size: 1.9em;
+                color: #fff;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+        }
+
+        form{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .line{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 25px;
+
+                label, input{
+                    width: 100%;
+                    text-transform: uppercase;
+                }
+
+                label{
+                    font-weight: 600;
+                    color: #fff;
+                    margin-bottom: 15px;
+                }
+
+                input{
+                    padding: 12px;
+                    border: none;
+                    border-bottom: solid 1px #ccc;
+                    background-color: transparent;
+                    color: #fff;
+                }
+            }
+
+            .btn{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                input{
+                    width: 190px;
+                    color: #333;
+                    border: none;
+                    font-weight: 600;
+                    background-color: #fff;
+                    border-radius: 2px;
+                    display: block;
+                    text-align: center;
+                    padding: 6px;
+                    margin-top: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 
     p{
         color: #fff;
@@ -311,6 +398,118 @@ footer{
         a{
             color: #fff;
             margin: 0px 5px;
+        }
+    }
+}
+
+/*medias querys*/
+@media(max-width: 500px){
+    .container-topo{
+        nav{
+            padding: 5% 5%;
+
+            ul{
+                justify-content: space-between;
+                li{
+                    margin: 0px;
+
+                    a{
+                        color:#fff;
+                        font-size: .65em;
+
+                        i{
+                            display: none;
+                        }
+                    }
+                }
+
+                li{
+                    width: 15%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .banner{
+            padding: .5% 5%;
+            text-align: center;
+
+            h1{
+                font-size: 1.8em;
+            }
+        }
+    }
+
+    .mundo{
+        padding: 1.5% 5%;
+        header{
+            p{
+                font-size: .8em;
+                width: 90%;
+            }
+        }
+        article{
+            ul{
+                flex-direction: column;
+                li{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .jornal{
+        padding: 1.5% 5%;
+        margin-top: 12%;
+        header{
+            p{
+                font-size: .8em;
+                width: 90%;
+            }
+        }
+        article{
+            ul{
+                align-items: center;
+                flex-direction: column;
+
+                li{
+                    width: 85%;
+                }
+            }
+        }
+    }
+
+    footer{
+        text-align: center;
+
+        article{
+            margin-top: 17%;
+
+            header{
+                margin-bottom: 50px;
+                margin-top: 30px;
+            }
+
+            form{
+                width: 85%;
+
+                .line{
+                    margin-bottom: 50px;
+
+                    label{
+                        text-align: left;
+                        font-weight: 400;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+
+        p{
+            font-size: 9px; 
+            margin-top: 100px;
         }
     }
 }
